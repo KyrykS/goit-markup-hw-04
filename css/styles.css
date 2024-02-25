@@ -78,6 +78,22 @@ address {
     color: #2e2f42;
     padding: 24px 0;
 }
+.menu-link.active {
+    position: relative;
+    color: #404bbf;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu-link.active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf; 
+    border-radius: 2px;
+
+}
 .container {
 width: 1158px;
 padding-right: 15px;
@@ -92,18 +108,11 @@ justify-content: space-between;
 }
 .page-header {
 border-bottom: 1px solid #e7e9fc;
+box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-nav {
 display: flex;
 align-items: center; 
-}
-.main-page {
-background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-url(../images/hero/bg.jpg);
-background-size: cover;
-max-width: 1440рх;
-margin-right: auto;
-margin-left: auto;
 }
 .menu {
 display: flex;
@@ -120,6 +129,11 @@ gap: 40px;
 padding-top: 24px;
 padding-bottom: 24px;
 }
+.address-item {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /*main page styles  */
 .main-page-container {
     max-width: 496px;
@@ -128,6 +142,15 @@ padding-bottom: 24px;
 }
 .main-page {
 padding: 188px 0;
+max-width: 1440px; 
+background-repeat: no-repeat;
+background-position: center;
+background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+url(../images/hero/bg.jpg);
+background-size: cover;
+max-width: 1440рх;
+margin-right: auto;
+margin-left: auto;
 }
 .main-title {
     font-weight: 700;
@@ -156,6 +179,7 @@ padding: 16px 32px;
 border: none;
 min-width: 169px;
 height: 56px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -218,16 +242,21 @@ justify-content: center;
 align-items: center;
 width: 64px;
 height: 64px;
-margin-bottom: 24px;
+margin-bottom: 8px;
 margin-top: 24px;
 margin-left: auto;
 margin-right: auto;
+height: 112px; 
+background-color: #f4f4fd;
+border-radius: 4px;
+
 }
 /* Benefits Styles */
 
 /* Team Styles */
 .employer {
     padding: 32px 0;
+    
 }
 .team-section {
     background-color: #f4f4fd;
@@ -237,6 +266,7 @@ margin-right: auto;
     background-color: #FFFFFF;
     width: 264px;
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-title {
     font-weight: 700;
