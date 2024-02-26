@@ -395,7 +395,7 @@ width: 360px;
 .container-list-item:hover {
 box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.parag-overlay {
+.portfolio-overlay {
     position: absolute;
     top: 0;
     font-size: 16px;
@@ -409,7 +409,7 @@ box-shadow:0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.container-list-item:hover .parag-overlay {
+.container-list-item:hover .portfolio-overlay {
     transform: translateY(0%);
 }
 /* Portfolio Styles */
